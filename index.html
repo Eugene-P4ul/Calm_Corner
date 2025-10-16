@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breathing Exercise</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div id="nav-bar">
+    <button id="homeBtn">Home</button>
+    <button id="breathingBtn">Breathing</button>
+    <button id="quotesBtn">Quotes</button>
+  </div>
+
+  <!-- Intro Section -->
+  <div id="intro" class="section">
+    <h2>Welcome to Calm Corner</h2>
+    <p>This will guide you through a simple breathing exercise to help you relax and reduce stress. Tap "Continue" to get started.</p>
+    <button onclick="startIntro()">Continue</button>
+  </div>
+
+  <!-- Breathing Section -->
+  <div id="breathing" class="section">
+    <h1>Relax and Breathe 🌿</h1>
+    <div class="circle" id="circle"></div>
+    <p id="instruction">Press "Start" to begin your breathing exercise.</p>
+    <div>
+      <button onclick="startBreathing()">Start</button>
+      <button onclick="pauseBreathing()">Pause</button>
+      <button onclick="changeSpeed()">Change Speed</button>
+    </div>
+  </div>
+
+  <!-- Quotes Section -->
+  <div id="quotes" class="section">
+    <h2>Motivational Quote</h2>
+    <p id="quoteDisplay">Click the button to get a random quote.</p>
+    <button onclick="getRandomQuote()">Get Quote</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
